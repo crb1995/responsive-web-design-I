@@ -1,3 +1,247 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
 
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+  width: 880px;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+.navbar {
+  padding-top: 12px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+  margin-right: 45px;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+/* CTA SECTION */
+.cta {
+  display: flex;
+  flex-direction: row;
+  margin: 70px 0px;
+  padding: 0px 40px;
+  justify-content: space-between;
+}
+
+.cta-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.cta-left h1 {
+  font-size: 80px;
+  text-align: center;
+}
+
+.cta-left a {
+  border: 2px solid black;
+  padding: 4px 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.cta-left a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* MAIN SECTION */
+h2 {
+  font-size: 18px;
+}
+
+/* Middle top section */
+.mid-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+/* Middle bottom section */
+.mid-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.m-b-i {
+  width: 32%;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+address {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 65px 0px 20px 0px;
+}
+
+/* SERVICES PAGE SPECIFIC STYLES */
+.serv-summary-top {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.serv-summary-top h1 {
+  font-size: 30px;
+}
+
+.services-main {
+  margin: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-mid-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  width: 48%;
+  border: 1px solid black;
+  background-color: #f4f3f4;
+}
+
+.s-m-i-content {
+  padding: 25px;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.learn-more a {
+  border: 1px solid black;
+  padding: 8px 35px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+}
+
+.learn-more a:hover {
+  background-color: black;
+  color: white;
+}
+
+.services-facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.services-facts-left {
+  padding-right: 30px;
+}
+
+.services-facts-left ul {
+  list-style-type: square;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.services-facts-left ul li {
+  padding-bottom: 10px;
+}
