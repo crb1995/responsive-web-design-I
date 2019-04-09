@@ -70,8 +70,9 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 body {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
+  padding: 20px 1.25%;
 }
 
 /* NAVBAR */
@@ -83,14 +84,16 @@ nav {
 }
 
 .navbar {
-  padding-top: 12px;
+  padding: 12px 65px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navbar a {
   text-decoration: none;
   color: gray;
   font-size: 18px;
-  margin-right: 45px;
 }
 
 .navbar a:hover {
@@ -103,7 +106,7 @@ nav {
   display: flex;
   flex-direction: row;
   margin: 70px 0px;
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
   justify-content: space-between;
 }
 
@@ -112,6 +115,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
+  padding-left: 50px;
 }
 
 .cta-left h1 {
@@ -142,6 +146,15 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin: 40px 0;
+}
+
+.m-t-i {
+  width: 48%;
+}
+
+/* MIDDLE IMAGE */
+.middle-img {
+  width: 100%;
 }
 
 /* Middle bottom section */
@@ -244,4 +257,109 @@ address {
 
 .services-facts-left ul li {
   padding-bottom: 10px;
+}
+
+/* IMPLEMENT MEDIA QUERIES */
+/* 800px tablet size*/
+@media(max-width: 800px) {
+  body {
+    padding: 30px 5%;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 35px 0px 0 0;
+  }
+
+  .navbar a {
+    margin-right: 0px;
+  }
+
+  .cta {
+    justify-content: center;
+    padding: 0;
+    margin-top: 45px;
+  }
+
+  .cta-left {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .cta-right {
+    display: none;
+  }
+}
+
+/* 500px mobile size */
+@media(max-width: 500px) {
+  body {
+    padding: 0 3%;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar a {
+    width: 110%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar a:nth-of-type(1){
+    border-top: 1px solid black;
+    margin-top: 20px;
+  }
+
+  .cta {
+    padding: 0 3% 50px 3%;
+    margin: 40px 0;
+    border-bottom: 2px solid black;
+  }
+
+  .cta .cta-left h1 {
+    font-size: 3rem;
+  }
+
+  .mid-top {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .m-t-i {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .mid-bottom {
+    flex-direction: column;
+    border-bottom: 2px solid black;
+  }
+
+  .m-b-i {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  hr {
+    display: none;
+  }
 }
